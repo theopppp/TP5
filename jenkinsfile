@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        PATH = "C:\\Windows\\System32;C:\\Users\\theog\\AppData\\Local\\Programs\\Python\\Python310;C:\\Program Files\\Docker\\Docker\\resources\\bin"
+    }
+
     stages {
         stage('Building'){
             steps{
